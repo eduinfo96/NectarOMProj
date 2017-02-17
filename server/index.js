@@ -20,6 +20,6 @@ routes( app );
 
 
 mongoose.connect( mongoUri );
-mongoose.connection.once( 'open', () => console.log( `Connected to MongoDB at ${ mongoUri }`) );
+mongoose.connection.once( 'open', () => console.log( `Connected to MongoDB at ${ mongoUri }.`) );
 
 app.listen( port, () => console.log( `Listening on ${ port }.`) )
